@@ -39,8 +39,8 @@ const UploadsPage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-white shadow-md p-4 flex justify-between items-center">
-        <Image src={Logo} alt="Logo da Empresa" width={120} height={40} />
+      <header className="bg-blue-900 shadow-md p-4 flex justify-between items-center">
+        <Image src={Logo} alt="Logo da Empresa" width={200} height={100} />
         <button
           onClick={goHome}
           className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
@@ -50,7 +50,7 @@ const UploadsPage = () => {
       </header>
 
       {/* Título */}
-      <h1 className="text-3xl text-center mt-6 font-semibold text-zinc-900">Meus Arquivos</h1>
+      <h1 className="text-3xl text-center mt-6 font-semibold text-blue-900">Meus Arquivos</h1>
 
       {/* Modal */}
       {isModalOpen && <AddFileModal onAddFile={addFile} onClose={closeModal} />}
@@ -106,7 +106,7 @@ const UploadsPage = () => {
       <div className="flex justify-center mt-6">
         <button
           onClick={() => setModalOpen(true)}
-          className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+          className="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
         >
           Adicionar Arquivo
         </button>
