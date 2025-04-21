@@ -51,7 +51,7 @@ const AddFileModal: React.FC<AddFileModalProps> = ({ onAddFile, onClose }) => {
           />
           <button
             type="button"
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700"
             onClick={() => document.getElementById('fileInput')?.click()}
           >
             Escolher Arquivo
@@ -77,7 +77,7 @@ const AddFileModal: React.FC<AddFileModalProps> = ({ onAddFile, onClose }) => {
         <div className="flex justify-end gap-2">
           <button
             type="submit"
-            className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+            className="bg-green-800 text-white px-4 py-2 rounded hover:bg-green-700"
           >
             Adicionar
           </button>
